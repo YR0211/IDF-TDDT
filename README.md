@@ -109,6 +109,9 @@ The recommended environment to run the code:
               │   ├── GT              
               │   │   ├── ***.png
               │   │   └── ... 
+              │   ├── Edge              
+              │   │   ├── ***.png
+              │   │   └── ...
               ├── Test                
               │   ├── T_GRAY             
               │   │   ├── ***.png
