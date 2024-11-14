@@ -1,0 +1,22 @@
+
+import argparse
+
+parser = argparse.ArgumentParser(description='****')
+parser.add_argument('--train_save_img_dir', default='./checkpoints/images', type=str)
+parser.add_argument('--train_save_model_dir', default='./checkpoints/train_models', type=str)
+parser.add_argument('--save_image_num', dest='save_image_num', default=8, type=int)
+parser.add_argument('--save_model_num', dest='save_model_num', default=50, type=int)
+parser.add_argument('--bfn_ckpt_dir', default="...", type=str)
+parser.add_argument('--llama_ckpt_dir', default="Meta-Llama-3-8B-Instruct/", type=str)
+parser.add_argument('--yolov5_ckpt_dir', default="yolov5/weights/best.pt", type=str)
+parser.add_argument('--yolov5_data_yaml', default="yolov5/data/m3fd.yaml", type=str)
+parser.add_argument('--segformer_config', default="segformer/local_configs/segformer/B2/segformer.b2.512x512.fmb.ours.forfusion.160k.py", type=str)
+parser.add_argument('--segformer_ckpt_dir', default="segformer/ckpts/iter_160000.pth", type=str)
+parser.add_argument('--ctdnet_ckpt_dir', default="ctdnet/trained_model/VT5000_Fusion_ours/model-40.pth", type=str)
+parser.add_argument('--tokenizer_path', default="Meta-Llama-3-8B-Instruct/tokenizer.model", type=str)
+parser.add_argument('--num_blocks', type=int, default=4)
+parser.add_argument('--batch_size', dest='batch_size', default=6, type=int)
+parser.add_argument('--LR', type=float, default=0.01)
+parser.add_argument('--Epoch', type=float, default=1000)
+parser.add_argument('--turn_epoch', type=float, default=50)
+args = parser.parse_args()
