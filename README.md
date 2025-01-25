@@ -127,4 +127,4 @@ The recommended environment to run the code:
         torchrun --nproc_per_node 1 train_T-OAR.py
 
 ## Note
-Due to the presence of numerous external links in the downstream task network code, it does not comply with the code release guidelines. Therefore, only the code for the method proposed in this paper has been made publicly available. The full code and pre-trained weights will be released after the paper is accepted.
+When the paper is accepted, we release the pre-trained model.
