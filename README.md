@@ -5,6 +5,10 @@ By Zengyi Yang, Yafei Zhang, Huafeng Li*, Yu Liu
 
 Our paper is available online! [[ELSEVIER](https://www.sciencedirect.com/science/article/pii/S1566253525002210)]
 
+<div align=center>
+<img src="https://github.com/YR0211/IDF-TDDT/blob/main/overview.png" width="90%">
+</div>
+
 ## Recommended Environment<br>
 The recommended environment to run the code:
  - [ ] python = 3.9.0
