@@ -1,6 +1,9 @@
-#  Instruction-Driven Fusion of Infrared-Visible Images: Tailoring for Diverse Downstream Tasks
+# IDF-TDDT
 
-The code of "Instruction-Driven Fusion of Infrared-Visible Images: Tailoring for Diverse Downstream Tasks"
+### Instruction-Driven Fusion of Infrared-Visible Images: Tailoring for Diverse Downstream Tasks
+By Zengyi Yang, Yafei Zhang, Huafeng Li*, Yu Liu
+
+Our paper is available online! [[ELSEVIER](https://www.sciencedirect.com/science/article/pii/S1566253525002210)]
 
 ## Recommended Environment<br>
 The recommended environment to run the code:
@@ -126,5 +129,14 @@ The recommended environment to run the code:
 
         torchrun --nproc_per_node 1 train_T-OAR.py
 
-## Note
-When the paper is accepted, we release the pre-trained model.
+## Citation
+```
+@article{IDF-TDDT,
+author = {Zengyi Yang and Yafei Zhang and Huafeng Li and Yu Liu},
+title = {Instruction-driven fusion of Infrared–visible images: Tailoring for diverse downstream tasks},
+journal = {Information Fusion},
+volume = {121},
+pages = {103148},
+year = {2025}
+}
+```
