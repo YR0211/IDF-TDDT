@@ -57,81 +57,101 @@ The recommended environment to run the code:
     * Prepare training data:
       * Object Detection Dataset (M3FD_Detection):
 
-            M3FD_Detection
-            ├── ir               
-            │   ├── train          
-            │   │   ├── ***.png
-            │   │   └── ...
-            │   ├── test           
-            │   │   ├── ***.png
-            │   │   └── ...
-            ├── vi                
-            │   ├── train              
-            │   │   ├── ***.png
-            │   │   └── ...
-            │   ├── test              
-            │   │   ├── ***.png
-            │   │   └── ...
-            ├── labels                
-            │   ├── train             
-            │   │   ├── ***.txt
-            │   │   └── ...
-            │   ├── test              
-            │   │   ├── ***.txt
-            │   │   └── ...
+             M3FD_Detection
+             ├── ir               
+             │   ├── train          
+             │   │   ├── ***.png
+             │   │   └── ...
+             │   ├── test           
+             │   │   ├── ***.png
+             │   │   └── ...
+             ├── vi                
+             │   ├── train              
+             │   │   ├── ***.png
+             │   │   └── ...
+             │   ├── test              
+             │   │   ├── ***.png
+             │   │   └── ...
+             ├── labels                
+             │   ├── train             
+             │   │   ├── ***.txt
+             │   │   └── ...
+             │   ├── test              
+             │   │   ├── ***.txt
+             │   │   └── ...
       * Semantic Segmentation Dataset (FMB):
       
-            FMB
-            ├── train               
-            │   ├── Infrared             
-            │   │   ├── ***.png
-            │   │   └── ...
-            │   ├── Visible              
-            │   │   ├── ***.png
-            │   │   └── ...
-            │   ├── Label              
-            │   │   ├── ***.png
-            │   │   └── ... 
-            ├── test                
-            │   ├── Infrared             
-            │   │   ├── ***.png
-            │   │   └── ...
-            │   ├── Visible              
-            │   │   ├── ***.png
-            │   │   └── ...
-            │   ├── Label              
-            │   │   ├── ***.png
-            │   │   └── ...
+             FMB
+             ├── train               
+             │   ├── Infrared             
+             │   │   ├── ***.png
+             │   │   └── ...
+             │   ├── Visible              
+             │   │   ├── ***.png
+             │   │   └── ...
+             │   ├── Label              
+             │   │   ├── ***.png
+             │   │   └── ... 
+             ├── test                
+             │   ├── Infrared             
+             │   │   ├── ***.png
+             │   │   └── ...
+             │   ├── Visible              
+             │   │   ├── ***.png
+             │   │   └── ...
+             │   ├── Label              
+             │   │   ├── ***.png
+             │   │   └── ...
 
       * Salient Object Detection Dataset (VT5000):
 
-              VT5000
-              ├── Train               
-              │   ├── T_GRAY             
-              │   │   ├── ***.png
-              │   │   └── ...
-              │   ├── RGB              
-              │   │   ├── ***.png
-              │   │   └── ...
-              │   ├── GT              
-              │   │   ├── ***.png
-              │   │   └── ... 
-              │   ├── Edge              
-              │   │   ├── ***.png
-              │   │   └── ...
-              ├── Test                
-              │   ├── T_GRAY             
-              │   │   ├── ***.png
-              │   │   └── ...
-              │   ├── RGB              
-              │   │   ├── ***.png
-              │   │   └── ...
-              │   ├── GT              
-              │   │   ├── ***.png
-              │   │   └── ... 
+             VT5000
+             ├── Train               
+             │   ├── T_GRAY             
+             │   │   ├── ***.png
+             │   │   └── ...
+             │   ├── RGB              
+             │   │   ├── ***.png
+             │   │   └── ...
+             │   ├── GT              
+             │   │   ├── ***.png
+             │   │   └── ... 
+             │   ├── Edge              
+             │   │   ├── ***.png
+             │   │   └── ...
+             ├── Test                
+             │   ├── T_GRAY             
+             │   │   ├── ***.png
+             │   │   └── ...
+             │   ├── RGB              
+             │   │   ├── ***.png
+             │   │   └── ...
+             │   ├── GT              
+             │   │   ├── ***.png
+             │   │   └── ... 
+
+  * Prepare the code for downstream task networks:
+    * The code for the object detection network YOLOv5 is provided as follows: [YOLOv5](https://github.com/ultralytics/yolov5)
+ 
+           IDF-TDDT
+           └── yolov5               
+               └── ...             
+    * The code for the semantic segmentation network SegFormer is provided as follows: [SegFormer](https://github.com/NVlabs/SegFormer)
+       
+           IDF-TDDT
+           └── segformer               
+               └── ...             
+    * The code for the salient object detection network CTDNet is provided as follows: [CTDNet](https://github.com/zhaozhirui/CTDNet)
+       
+           IDF-TDDT
+           └── ctdnet               
+               └── ...             
   * Run:
 
         torchrun --nproc_per_node 1 train_T-OAR.py
+
+## Pretrained Model
+*   The pretrained model is provided as follows: [Google Link](https://drive.google.com/drive/folders/1-0vzZIRpf8p_zFLeJOxlkoLR-9h-hX0x?usp=sharing)
 
 ## Citation
 ```
