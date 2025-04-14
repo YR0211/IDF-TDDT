@@ -56,8 +56,6 @@ def main():
 
         bfn = getattr(bfn_model, bfn_name)
         bfn = bfn(num_blocks=args.num_blocks)
-        bfn_ckpt = torch.load(args.bfn_ckpt_dir)
-        bfn.load_state_dict(bfn_ckpt['net'])
 
         t_dpi = getattr(dpi_model, dpi_name)
         T_dpi = t_dpi(num_blocks=args.num_blocks - 1, embed_dim=4096, inC=8)
