@@ -1,9 +1,14 @@
 # IDF-TDDT
 
 ### Instruction-Driven Fusion of Infrared-Visible Images: Tailoring for Diverse Downstream Tasks [INFFUS 2025]
-By Zengyi Yang, Yafei Zhang, Huafeng Li*, Yu Liu
+By [Zengyi Yang](https://scholar.google.com/citations?user=o36El44AAAAJ&hl=zh-CN), Yafei Zhang, Huafeng Li*, Yu Liu
 
-Our paper is available online! [[ELSEVIER](https://www.sciencedirect.com/science/article/pii/S1566253525002210)]
+## 🔥 News
+
+- 🏅 Our paper has been recognized as an ESI Highly Cited Paper.
+- 📄 Our paper is available online: [[ELSEVIER](https://www.sciencedirect.com/science/article/pii/S1566253525002210)].
+
+## Overview
 
 <div align=center>
 <img src="https://github.com/YR0211/IDF-TDDT/blob/main/overview.png" width="90%">
